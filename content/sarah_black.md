@@ -25,7 +25,7 @@ I don't have dreams.
 Aka I just want to figure out the stuff I know I want to do, haven't thought much beyond that.
 
 ## Favorite Disney Princess
-[#arielfolyfe] (https://www.youtube.com/watch?v=SXKlJuO07eM "Part of Your World")
+[#arielfolyfe](https://www.youtube.com/watch?v=SXKlJuO07eM "Part of Your World")
 
 ## Github
-[sarah-loring] (https://github.com/sarah-loring/nyu-python "github")
+[sarah-loring](https://github.com/sarah-loring/nyu-python "github")
