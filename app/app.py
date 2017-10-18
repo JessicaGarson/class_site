@@ -1,38 +1,36 @@
 import sys
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
+from flask_flatpages import FlatPages, pygments_style_defs
+from flask_frozen import Freezer
+
+DEBUG = True
+FLATPAGES_AUTO_RELOAD = DEBUG
+FLATPAGES_EXTENSION = '.md'
+FLATPAGES_ROOT = 'content'
+POST_DIR = 'posts'
+
 
 app = Flask(__name__)
+flatpages = FlatPages(app)
+freezer = Freezer(app)
 app.config.from_object(__name__)
 
-class Members():
-    '''Ultimately, we should sub this out for a database of some kind.
-    Rather than have a unique html file for each member, we can have one
-    page called member.html, and use templates that call info from the
-    database'''
-
-    include = {
-        'misha': 'misha.html',
-        'kai': 'kai.html',
-        'alice': 'alice.html',
-        'dean': 'dean.html',
-        'isobel': 'isobel.html',
-        'sarah': 'sarah.html',
-        'ana': 'ana.html',
-        }
 
 
 @app.route("/")
 def index():
-    return render_template('base.html')
+    return render_template('index.html')
 
 @app.route("/<member>")
 def member_page(member):
-    if member not in Members.include.keys():
-        return render_template('base.html')
-    else:
-        return render_template(Members.include[member])
+    path = '{}/{}'.format(POST_DIR, member)
+    post = flatpages.get_or_404(path)
+    return render_template('members.html', post=post)
 
+@app.route("/projects")
+def projects_page():
+    return render_template('projects.html')
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
