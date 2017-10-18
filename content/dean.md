@@ -7,7 +7,7 @@ Grew up in Sacramento, CA. Studied painting at Rhode Island School of Design. Be
 Mulan
 
 ## Fun Facts
-I play basketball
+I play basketball  
 I used to have a radio show
 
 ## Github
