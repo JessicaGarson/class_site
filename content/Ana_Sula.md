@@ -1,16 +1,14 @@
-# Ana Sulakvelidze
+# Dean Goldman
 
 ## Bio
-Grew up in Georgia (country not the state). Moved to US in 2011 to pursue a master's degree in International Economics and Finance. Ended up in Analytics. Curretly work as a data analyst and consultant at a law form. Before moved to New York, lived in Texas and Louisiana.
+Grew up in Sacramento, CA. Studied painting at Rhode Island School of Design. Became interested in coding while working with 3D software, now beginning a career as a programmer.
 
 ## Favorite Disney Princess
- [Belle](https://www.youtube.com/watch?v=xsEFDZoqYzk)
+Mulan
 
 ## Fun Facts
-I love golden retriever puppies!
-I play piano.
-I like crafts.
-I believe in magic. 
+I play basketball
+I used to have a radio show
 
 ## Github
-[AnaSula](https://github.com/AnaSula/NYU-Python-Programming-Class)
+[DeanGoldman](https://github.com/dgoldman916/nyu-python)
