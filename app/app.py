@@ -25,7 +25,7 @@ def index():
 def member_page(member):
     path = '{}/{}'.format(POST_DIR, member)
     post = flatpages.get_or_404(path)
-    return render_template('members.html', post=post)
+    return render_template('member.html', post=post)
 
 @app.route("/projects")
 def projects_page():
