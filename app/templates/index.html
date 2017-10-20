@@ -1,36 +1,100 @@
-{% extends "base.html" %}
-{% block title %}Home{% endblock %}
-{% block body %}
-<!--Custom css for this website -->
-<link rel="stylesheet" type="text/css" href="static/map3.css">
-<style type="text/css">
-  .my-nav{
-    margin: 20px;
-  }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}NYU Python 2017 Class Home Page{% endblock %}</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      .my-nav{
+        margin: 15px;
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link rel="stylesheet" text= "text/css" href="{{ url_for('static', filename='map3.css') }}">
+
+  <!--Custom css for margins -->
+  <style type="text/css">
+    .my-nav{
+      margin: 200px;
+      font-size: 100px;
+      font-weight: bolder;
+    }
+    .dropdown-menu{
+      font-size: 40px;
+    }
+    .container h1{
+      font-weight: bold;
+      font-size: 100px;
+      background-color: rgba(255,255,255,0.7);
+
+    }
+    .lead {
+      font-weight: bold;
+      font-size: 40px;
+      background-color: rgba(255,255,255,0.7);
+    }
+  </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div>
+        <a class="navbar-brand" rel="home" href="/">
+          <img src="/static/python2.png">
+        </a>
+      </div>
+      <div class="my-nav">
+        <nav>
+          <ul class="nav nav-pills">
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Members <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/alice">Alice</a></li>
+                  <li><a href="/ana">Ana</a></li>
+                  <li><a href="/dean">Dean</a></li>
+                  <li><a href="/isobel">Isobel</a></li>
+                  <li><a href="/kai">Kai</a></li>
+                  <li><a href="/misha">Misha</a></li>
+                  <li><a href="/sarah">Sarah</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Instructor <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                  <li><a href="/jessica">Jessica</a></li>
+              </ul>
+            </li>
+            <li role="presentation"><a href="/projects">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+
 <!--Custom js for map and buttons -->
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script src="static/map3.js"></script>
 
 <div class="container">
   <h1>Hello, Dear Visitor!</h1>
-  <p class="lead">Welcome to the NYU Diploma in Python Programming course website. We are a team of amazing individuals with different backgrounds who love to code and love Python. We started this course in June 2017 and already know so much. We built this site ourselves!  </p>
-  <p class="lead">The course consists of 3 classes about programming in Python and a capstone project which we will devote the last class to. In the capstone class, each of us will build an independent project in Python and make it available on our public GitHub repositories. Feel free to checkout! </p>
-  <p class="lead">You can also checkout our profiles and completed projects in Members and Projects links in the navbar, respectively. </p>
-<img src="{{url_for('static', filename=['')}}" />
-{% endblock %}
+
+  <div class="lead">
+    <p>Welcome to the NYU Diploma in Python Programming course website. We are a team of amazing individuals with different backgrounds who love to code and love Python.</p>
+    <p>We started this course in June 2017 and already know so much. We built this site ourselves!</p>
+    <p>The course consists of 3 classes about programming in Python and a capstone project which we will devote the last class to. In the capstone class, each of us will build an independent project in Python and make it available on our public GitHub repositories. Feel free to checkout!
+You can also checkout our profiles and completed projects in Members and Projects links in the navbar, respectively. </p>
+  </div>
 </div> <!-- /container -->
 
-<button type="submit" style="background: url(static/test.jpg);"></button>
-<button type="submit" style="background: url(static/test.jpg);"></button>
-<button type="submit" style="background: url(static/test.jpg);"></button>
-<button type="submit" style="background: url(static/test.jpg);"></button>
-<button type="submit" style="background: url(static/test.jpg);"></button>
-<button type="submit" style="background: url(static/test.jpg);"></button>
-<button type="submit" style="background: url(static/test.jpg);"></button>
-<button type="submit" style="background: url(static/test.jpg);"></button>
+<a href="/alice"><button type="submit" style="background: url(static/test.jpg);"></button></a>
+<a href="/ana"><button type="submit" href="/ana" style="background: url(static/test.jpg);"></button></a>
+<a href="/dean"><button type="submit" href="/dean" style="background: url(static/test.jpg);"></button></a>
+<a href="/isobel"><button type="submit" href="/isobel" style="background: url(static/test.jpg);"></button></a>
+<a href="/kai"><button type="submit" href="/kai" style="background: url(static/test.jpg);"></button></a>
+<a href="/misha"><button type="submit" href="/misha" style="background: url(static/test.jpg);"></button></a>
+<a href="/sarah"><button type="submit" href="/sarah" style="background: url(static/test.jpg);"></button></a>
+<a href="/jess"><button type="submit" href="/jess" style="background: url(static/test.jpg);"></button></a>
 
-
-
-
-
+</body>
+</html>
