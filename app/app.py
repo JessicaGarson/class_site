@@ -1,21 +1,15 @@
 import sys
-from flask import Flask, render_template
-from flask_flatpages import FlatPages, pygments_style_defs
-from flask_frozen import Freezer
+import markdown
+from flask import Flask, render_template, Markup
 
 DEBUG = True
-FLATPAGES_AUTO_RELOAD = DEBUG
-FLATPAGES_EXTENSION = '.md'
-FLATPAGES_ROOT = 'content'
-POST_DIR = 'posts'
+EXTENSION = '.md'
+MD_DIR = 'content'
+
 
 
 app = Flask(__name__)
-flatpages = FlatPages(app)
-freezer = Freezer(app)
 app.config.from_object(__name__)
-
-
 
 @app.route("/")
 def index():
@@ -23,9 +17,12 @@ def index():
 
 @app.route("/<member>")
 def member_page(member):
-    path = '{}/{}'.format(POST_DIR, member)
-    post = flatpages.get_or_404(path)
-    return render_template('member.html', post=post)
+    path = '{}/{}'.format(MD_DIR, member + EXTENSION)
+    f = open(path, 'r')
+    member_md = f.read()
+
+    content = Markup( markdown.markdown( member_md ) )
+    return render_template('member.html', **locals() )
 
 @app.route("/projects")
 def projects_page():
