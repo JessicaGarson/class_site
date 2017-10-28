@@ -1,1 +1,9 @@
-<!--This page will have templating for each class member-->
+{% extends "base.html" %}
+
+{% block content %}
+<html>
+    <body>
+        {{ projects.html|safe }}
+    </body>
+</html>
+{% endblock %}
