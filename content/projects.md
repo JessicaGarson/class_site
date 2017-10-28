@@ -21,6 +21,7 @@
 
 # Misc
 
+[Dean's About a Dataset](https://github.com/dgoldman916/data_visualization/tree/master/data_viz_bike)
 [Isobel's About a Dataset](https://github.com/isobelsv/Assignments3/blob/master/nyc_events_data_analysis.ipynb)
 [Sarah's About a Dataset](https://github.com/sarah-loring/nyu-python/blob/master/advanced_python/dataset/dataset-breakdown.md)
 [Sarah's Flask Blog](https://github.com/sarah-loring/nyu-python/tree/master/advanced_python/flask_blog/db)
