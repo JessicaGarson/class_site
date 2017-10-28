@@ -2,15 +2,10 @@ body {
   background-image: url(nycmap.jpg);
   background-position: cover;
   background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 button {
   position: absolute;
-  height: 150px;
-  width: 150px;
   border-radius: 50%;
-  font-size: 37px;
-  font-family: sans-serif;
-  font-weight: bolder;
-  text-decoration: none;
 }
