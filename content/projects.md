@@ -3,6 +3,7 @@
 [Alice's Intro Python final project](https://github.com/artopping/nyu-python/tree/master/course2/data_project)
 [Ana's Intro Programming final project](https://github.com/AnaSula/NYU-Python-Programming-Class/tree/master/intro-programming/project_1)
 [Dean & Isobel's Data Analysis project](https://github.com/dgoldman916/nyu-python/tree/master/class2/data_analysis_final)
+[Kai's Intro Python final project](https://github.com/KaiYan0729/nyu_python/tree/master/programming_with_python/final)
 [Misha's Intro Python final project](https://github.com/mishka28/NYU-Python/tree/master/programming_with_pythong_class2/Seth)
 [Sarah's Intro Python final project](https://github.com/sarah-loring/nyu-python/blob/master/intro_python/final_project/final_combined.py)
 [Sarah and Isobel's Currency Converter](https://github.com/sarah-loring/nyu-python/blob/master/intro-programming/final_project/budget_converter_v3.py)
@@ -14,6 +15,7 @@
 [Ana's text based game](https://github.com/AnaSula/NYU-Python-Programming-Class/tree/master/course-3/projects/text_based_game)
 [Dean's text based game](https://github.com/dgoldman916/nyu-python/tree/master/class3/Hiking_Trip)
 [Isobel's text based game](https://github.com/isobelsv/Assignments3/blob/master/trick_or_treat.py)
+[Kai's text based game](https://github.com/KaiYan0729/nyu_python/tree/master/advanced_python/assignments/proj1)
 [Misha's text based game](https://github.com/mishka28/NYU-Python/blob/master/advance_python_class_3/Homework1/misha_textgame_3.py)
 [Sarah's text based game](https://github.com/sarah-loring/nyu-python/tree/master/advanced_python/text_game)
 
