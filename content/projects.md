@@ -2,7 +2,7 @@
 
 [Alice's Intro Python final project](https://github.com/artopping/nyu-python/tree/master/course2/data_project)
 [Ana's Intro Programming final project](https://github.com/AnaSula/NYU-Python-Programming-Class/tree/master/intro-programming/project_1)
-[Dean & Isobel's Data Analysis project](https://github.com/isobelsv/intro-python/tree/master/Project2DeanIsobel)
+[Dean & Isobel's Data Analysis project](https://github.com/dgoldman916/nyu-python/tree/master/class2/data_analysis_final)
 [Misha's Intro Python final project](https://github.com/mishka28/NYU-Python/tree/master/programming_with_pythong_class2/Seth)
 [Sarah's Intro Python final project](https://github.com/sarah-loring/nyu-python/blob/master/intro_python/final_project/final_combined.py)
 [Sarah and Isobel's Currency Converter](https://github.com/sarah-loring/nyu-python/blob/master/intro-programming/final_project/budget_converter_v3.py)
