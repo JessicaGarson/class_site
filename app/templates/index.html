@@ -10,10 +10,15 @@
       .my-nav{
         margin: 15px;
       }
+      body {
+        background-image: url(static/nycmap.jpg);
+        background-position: cover;
+        background-repeat: no-repeat;
+          background-size: 100%;
+      }
     </style>
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
-    <link rel="stylesheet" text= "text/css" href="{{ url_for('static', filename='map3.css') }}">
   </head>
 
   <body>
@@ -49,10 +54,6 @@
         </nav>
       </div>
 
-<!--Custom js for map and buttons -->
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="static/map3.js"></script>
-
 <div class="container">
   <h1>Hello, Dear Visitor!</h1>
 
@@ -62,16 +63,6 @@
     <p>The course consists of 3 classes about programming in Python and a capstone project which we will devote the last class to. In the capstone class, each of us will build an independent project in Python and make it available on our public GitHub repositories. Feel free to checkout!
 You can also checkout our profiles and completed projects in Members and Projects links in the navbar, respectively. </p>
   </div>
-</div> <!-- /container -->
-<div class="container-buttons">
-<a href="/alice"><button type="submit" style="background: url(static/test.jpg); background-size: 100%;"></button></a>
-<a href="/ana"><button type="submit" href="/ana" style="background: url(static/test.jpg); background-size: 100%;"></button></a>
-<a href="/dean"><button type="submit" href="/dean" style="background: url(static/test.jpg); background-size: 100%;"></button></a>
-<a href="/isobel"><button type="submit" href="/isobel" style="background: url(static/test.jpg); background-size: 100%;"></button></a>
-<a href="/kai"><button type="submit" href="/kai" style="background: url(static/test.jpg); background-size: 100%;"></button></a>
-<a href="/misha"><button type="submit" href="/misha" style="background: url(static/test.jpg); background-size: 100%;"></button></a>
-<a href="/sarah"><button type="submit" href="/sarah" style="background: url(static/test.jpg); background-size: 100%;"></button></a>
-<a href="/jess"><button type="submit" href="/jess" style="background: url(static/test.jpg); background-size: 100%;"></button></a>
 </div>
 </body>
 </html>
