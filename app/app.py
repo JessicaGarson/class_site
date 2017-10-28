@@ -21,15 +21,13 @@ app.config.from_object(__name__)
 def index():
     return render_template('index.html')
 
-@app.route("/<member>")
+
+@app.route("/<member>/")
 def member_page(member):
     path = '{}/{}'.format(POST_DIR, member)
     post = flatpages.get_or_404(path)
-    return render_template('member.html', post=post)
+    return render_template('member.html', member=post)
 
-@app.route("/projects")
-def projects_page():
-    return render_template('projects.html')
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
